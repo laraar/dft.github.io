@@ -1,0 +1,320 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="images/DTYA-embossed.webp" as="image" />
+    <link rel="preload" href="images/DTYA-show.webp" as="image" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Deerfield Theater for Young Audiences</title>
+  </head>
+  <body>
+    <!-- Page header, which includes a partially transparent background to make it nearly white -->
+    <!-- Page header, which includes a partially transparent background to make it nearly white -->
+    <div class="header">
+      <img id="program-header" src="images/DTYA-header.png" />
+      <!-- This is the page navigation bar. -->
+      <div id="nav-bar">
+        <div id="nav-bar-logo-container">
+          <img id="nav-bar-logo" src="images/DTYA-logo.webp" />
+        </div>
+        <div id="nav-buttons">
+          <div class="nav-btn" id="home">Home</div>
+          <div class="nav-btn" id="about">About DTYA</div>
+          <div class="nav-btn" id="pastshows">Past Shows</div>
+          <div class="nav-btn" id="donations">Donations</div>
+          <div class="nav-btn" id="dft">DFT</div>
+          <div class="nav-btn" id="theaterd">Theater D</div>
+        </div>
+      </div>
+    </div>
+    <!-- Next is everything after page header. The after-header div has gradient that continues from the header color -->
+    <div class="after-header">
+      <!-- This is the main page content after the nav-bar. Can be different per page. -->
+      <div id="main-page-content">
+        <!-- Thank you for latest show, and stay tuned -->
+        <div id="thank-you-stay-tuned">
+          <div class="thank-you-text">
+            Thank you to everyone who came out<br />
+            to see our latest production!
+          </div>
+          <div>
+            <img id="showlogo2" src="images/DTYA-show2.webp" />
+          </div>
+          <div class="thank-you-text2">Stay tuned for info about our next production!</div>
+        </div>
+
+        <!-- This is then the show announcement, with text (narrow or wide), 
+        and show image with overlay text (narrow or wide) -->
+        <div id="show-announcement">
+          <div id="info-text-wide">Announcing DTYA's August 2024 Production!</div>
+          <div id="info-text-narrow">Announcing DTYA's<br />August 2024 Production!</div>
+          <div id="logo-container">
+            <img id="showlogo" class="zoom-image" src="images/DTYA-show.webp" />
+          </div>
+          <div id="show-info-wide">
+            <p>August 1-4, 2024 • Caruso Auditorium, Deerfield</p>
+          </div>
+          <div id="show-info-narrow">August 1-4, 2024<br />Caruso Auditorium, Deerfield</div>
+
+          <div id="performance-info">
+            <!--Not used for TD show in 2024-->
+            <div id="performance-title">Performance Information</div>
+            <div id="performance-text-items">
+              <div class="performance-text">
+                Caruso Auditorium<br />
+                1801 Montgomery Road, Deerfield
+              </div>
+              <div class="performance-text">
+                Thursday, August 1, 6:00pm<br />
+                Friday, August 2, 10:30am and 6:00pm<br />
+                Saturday, August 3, 10:30am and 2:00pm<br />
+                Sunday, August 4, 10:30am
+              </div>
+            </div>
+          </div>
+          <div id="cast-info">
+            <!--Not used for TD show in 2024-->
+            <div id="cast-title">We are excited to announce our cast!</div>
+            <div id="cast-list">
+              <div id="unformatted-cast">
+                Jane - Olivia Wheeler<br />
+                Mum - Amy Conn Bloom<br />
+                Member of the Pack - Scottlynn Stroming<br />
+                Member of the Pack - Amy Torf<br />
+                Member of the Pack - Sue Vani<br />
+              </div>
+              <div class="cast-item">
+                <div class="character-name">JANE</div>
+                <div class="actor-name">Olivia Wheeler</div>
+              </div>
+              <div class="cast-item">
+                <div class="character-name">MUM</div>
+                <div class="actor-name">Amy Conn Bloom</div>
+              </div>
+              <div class="cast-item">
+                <div class="character-name">MEMBER OF THE PACK</div>
+                <div class="actor-name">Scottlynn Stroming</div>
+              </div>
+              <div class="cast-item">
+                <div class="character-name">MEMBER OF THE PACK</div>
+                <div class="actor-name">Amy Torf</div>
+              </div>
+              <div class="cast-item">
+                <div class="character-name">MEMBER OF THE PACK</div>
+                <div class="actor-name">Sue Vani</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="credits">
+            <div id="first-credit-row">
+              <div>Book by<br />David Greig</div>
+              <div>Muisic by<br />Marc Shaiman</div>
+              <div>Lyrics by<br />Scott Wittman<br />Marc Shaiman</div>
+            </div>
+            <div id="second-credit-row">
+              <div id="Dahl">Based on the novel by ROALD DAHL</div>
+            </div>
+            <div id="third-credit-row">
+              <div id="Songs">
+                Songs from the Motion Picture by<br />LESLIE BRICUSSE and ANTHONY NEWLEY
+              </div>
+            </div>
+          </div>
+          <div id="ticket-info">
+            <div id="tickets-coming">
+              Tickets are now on sale!<br />Click
+              <a
+                href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/SPLASH.html?InterfaceParameter=5"
+                id="ticket-sales"
+                >here</a
+              >
+              to reserve your seats.
+            </div>
+          </div>
+        </div>
+
+        <div id="past-shows">
+          <div id="past-shows-title">Our Past Shows!</div>
+          <div id="show-blocks">
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/MeJane2024.webp" />
+              <div class="past-show-year">2024</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/FancyNancy2023.webp" />
+              <div class="past-show-year">2023</div>
+            </div>
+          </div>
+        </div>
+        <div id="donations-page">
+          <div id="donations-title">Donate to Support Deerfield Theater Programs</div>
+          <div id="donations-page-text">
+            <div class="donations-text">It takes a lot of help to put a show together!</div>
+            <div class="donations-text">
+              If you would like to volunteer for any of our shows, please contact Laney Haupert,
+              Deerfield Park District Cultural Arts and Special Events Supervisor, at
+              <a href="mailto:laney@deerfieldparks.org">laney@deerfieldparks.org</a>.
+            </div>
+            <div class="donations-text">
+              To make a cash donation, please click
+              <a
+                href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/donation.html?interfaceparameter=5"
+                >here</a
+              >
+              or <br />contact the Deerfield Park District at 847-945-0650.
+            </div>
+            <div class="donations-text">Thank you!</div>
+          </div>
+        </div>
+        <div id="about-page">
+          <div class="about-title">About Deerfield Theater for Young Audiences</div>
+          <div id="about-page-text">
+            <div class="about-text">
+              <p>
+                Deerfield Theater for Young Audiences (DTYA) was created in 2022 with the intent to
+                introduce theatrical experiences to audience members of all ages, and with its
+                inaugural production, <em>Fancy Nancy: The Musical</em>, taking the stage the
+                following year.
+              </p>
+            </div>
+            <div id="board-info">
+              <div class="about-title">The DFT Board of Directors</div>
+              <div class="board-text">
+                Larry Aaronson<br />
+                Marci Medwed Barnett<br />
+                Chas Carol<br />
+                Ryan Elliott<br />
+                Laney Haupert<br />
+                Claire Higgins<br />
+                Mathew Kerbis<br />
+                Larry Mason<br />
+                Susie Mason<br />
+                Lauren Price<br />
+                Lee Rivlin<br />
+                Sue Vani<br />
+              </div>
+            </div>
+            <div id="history-info">
+              <div class="history-title">Deerfield Theater History!</div>
+              <div class="about-text">
+                <p>
+                  As noted above, Deerfield Family Theater continues as a successor to Children's
+                  Theater of Deerfield. Deerfield historical records also give us the following
+                  historical Deerfield theater gem, from way back in 1913...
+                </p>
+              </div>
+              <div id="old-deerfield">
+                <img id="history-image" src="images/deerfielddramaticclub.webp" />
+              </div>
+            </div>
+            <div id="ADA-title">Americans with Disabilities Act</div>
+            <div id="ADA-notice">
+              <p>
+                Our Park District and other public agencies are subject to the provisions of the
+                Americans with Disabilities Act (ADA), which prohibits discrimination in the
+                services, programs or facilities provided to individuals with disabilities. If you
+                believe that, in accordance with the Americans with Disabilities Act, special
+                assistance may be required when participating in a program, using a facility or
+                receiving a service, please contact Executive Director Jeff Harvey at 847-572-2612.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Directions bar -->
+      <div id="direction-bar">
+        <div id="directions-intro">DIRECTIONS TO THE THEATER:</div>
+        <div class="directions">
+          <img class="map-pin" src="images/map-pin.webp" />
+          <a
+            class="direction-link"
+            href="https://www.google.com/maps/dir/Current+Location/42.16936129460675,-87.87289655274725"
+            target="_self"
+            >From your location</a
+          >
+        </div>
+        <div class="directions">
+          <img class="map-pin" src="images/map-pin.webp" />
+          <a
+            class="directions-link"
+            href="https://www.google.com/maps/dir/?api=1&origin=42.16911208400764,-87.87140041251554&destination=42.16936129460675,-87.87289655274725&travelmode=driving"
+            target="_self"
+            >From Caruso entrance road</a
+          >
+        </div>
+      </div>
+
+      <!-- This is the icon-bar -->
+      <div id="icon-bar">
+        <div id="icons">
+          <a
+            href="https://open.spotify.com/show/3oloGjAdwDtbNd8TybNMI5?si=1eKesfZeSTqVe9DHbE5gPw&dl_branch=1"
+            ><img id="podcast" class="icon-item" src="images/DFT-podcast.png"
+          /></a>
+          <a href="https://deerfieldtheater.substack.com/subscribe"
+            ><img id="DFT-email" class="icon-item" src="images/DFT-email.png"
+          /></a>
+          <a href="http://www.deerfieldparks.org/"
+            ><img id="DFPD" class="icon-item" src="images/DFPDlogo.png"
+          /></a>
+          <a href="http://www.arts.illinois.gov/"
+            ><img id="IAC" class="icon-item" src="images/IAC.png"
+          /></a>
+          <a href="https://www.arts.gov/"
+            ><img id="NEA" class="icon-item" src="images/NEA.png"
+          /></a>
+        </div>
+      </div>
+      <div id="photo-box">
+        <img class="photo" src="images/photos/MeJane1.webp" />
+        <img class="photo" src="images/photos/Fancy1.webp" />
+        <img class="photo" src="images/photos/MeJane2.webp" />
+        <img class="photo" src="images/photos/Fancy2.webp" />
+        <img class="photo" src="images/photos/MeJane3.webp" />
+        <img class="photo" src="images/photos/Fancy3.webp" />
+        <img class="photo" src="images/photos/MeJane4.webp" />
+        <img class="photo" src="images/photos/Fancy4.webp" />
+        <img class="photo" src="images/photos/MeJane5.webp" />
+        <img class="photo" src="images/photos/Fancy5.webp" />
+        <img class="photo" src="images/photos/MeJane6.webp" />
+        <img class="photo" src="images/photos/Fancy6.webp" />
+        <img class="photo" src="images/photos/MeJane7.webp" />
+        <img class="photo" src="images/photos/Fancy7.webp" />
+        <img class="photo" src="images/photos/MeJane8.webp" />
+        <img class="photo" src="images/photos/Fancy8.webp" />
+        <img class="photo" src="images/photos/MeJane9.webp" />
+      </div>
+      <div id="bottom-bar">
+        <div id="DFT-info">
+          <div id="top-row">
+            <div id="address-name">
+              <div id="DFT-name">&copy; Deerfield Family Theater</div>
+              <div id="DFT-address">836 Jewett Park Drive • Deerfield IL 60015</div>
+            </div>
+            <div id="social-media">
+              <a href="https://m.facebook.com/DeerfieldFamilyTheater">
+                <img id="facebook" src="images/facebook.webp"
+              /></a>
+              <a href="https://www.instagram.com/DeerfieldFamilyTheater">
+                <img id="instagram" src="images/instagram.webp"
+              /></a>
+            </div>
+          </div>
+          <div id="for-more-info">
+            For more information:<br />Contact Laney Haupert, Cultural Arts and Special Events
+            Supervisor,<br />Deerfield Park District, at laney@deerfieldparks.org
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- </div> -->
+  </body>
+</html>
