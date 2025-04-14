@@ -757,6 +757,7 @@ with pieces similarly scaling */
   margin: auto;
   padding: calc(var(--cw) * 1.5);
   margin-top: calc(var(--cw) * 2.3);
+  display: none;
 }
 .join-board-title {
   font: 700 calc(var(--cw) * 3.2) Arial, Helvetica, sans-serif;
