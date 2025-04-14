@@ -297,7 +297,7 @@ with pieces similarly scaling */
 
 #logo-container {
   width: 100%;
-  aspect-ratio: 13.889 / 7.403;
+  aspect-ratio: 13.889 / 9;
   position: relative;
   /* display: inline-block; */
   display: block;
