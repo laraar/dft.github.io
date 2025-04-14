@@ -448,7 +448,7 @@ with pieces similarly scaling */
 }
 
 #event-info {
-  display: none;
+  display: block;
   border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
   width: 95%;
   padding-top: calc(var(--cw) * 2);
@@ -463,13 +463,12 @@ with pieces similarly scaling */
 #event-title,
 #cast-title {
   font: 700 calc(var(--cw) * 5) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72);
+  color: #ddb083;
   text-decoration: underline;
-  vertical-align: top;
   margin: 0;
   margin-bottom: calc(var(--cw) * 1.9);
   padding-top: calc(var(--cw) * 2.2);
-  display: none;
+  display: block;
 }
 #event-title {
   text-decoration: none;
