@@ -448,7 +448,7 @@ with pieces similarly scaling */
 }
 
 #event-info {
-  display: block;
+  display: none;
   border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
   width: 95%;
   padding-top: calc(var(--cw) * 2);
