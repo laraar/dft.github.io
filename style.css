@@ -433,7 +433,19 @@ with pieces similarly scaling */
   display: none;
 }
 
-#workshop-info,
+#workshop-info {
+  border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
+  width: 95%;
+  padding-top: calc(var(--cw) * 2);
+  margin: auto;
+  margin-top: calc(var(--cw) * 5);
+  /* display: flex; */
+  display: block;
+  flex-direction: column;
+  font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+  color: rgb(234, 197, 72);
+}
+
 #cast-info {
   border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
   width: 95%;
@@ -463,7 +475,7 @@ with pieces similarly scaling */
 #event-title,
 #cast-title {
   font: 700 calc(var(--cw) * 5) Arial, Helvetica, sans-serif;
-  color: #ddb083;
+  color: #ecbd4c;
   text-decoration: underline;
   margin: 0;
   margin-bottom: calc(var(--cw) * 1.9);
@@ -487,13 +499,14 @@ with pieces similarly scaling */
 }
 .audition-text {
   font: 500 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72);
+  color: #ecbd4c;
   margin-bottom: calc(var(--cw) * 3);
 }
 .workshop-text {
   font: 500 calc(var(--cw) * 3.5) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
   margin-bottom: calc(var(--cw) * 3);
+  line-height: 1.25;
 }
 .ital {
   font-style: italic;
@@ -510,9 +523,11 @@ with pieces similarly scaling */
 .space {
   margin-top: calc(var(--cw) * 4.2);
 }
-#char-breakdown,
-#workshop-signup {
+#char-breakdown {
   color: rgb(234, 197, 72);
+}
+#workshop-signup {
+  color: #9fca35;
 }
 
 #workshop-signup-coming {
@@ -633,9 +648,7 @@ with pieces similarly scaling */
 .audition-button-link {
   text-decoration: none;
 }
-#workshop-info {
-  display: none;
-}
+
 /* Past shows page content */
 #past-shows {
   height: auto;
