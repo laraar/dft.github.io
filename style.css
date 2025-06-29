@@ -340,6 +340,7 @@ with pieces similarly scaling */
 }
 #auditions-announce {
   font: 600 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
+  display: none;
 }
 /* @media screen and (max-width: 1317px) {
   #show-info-wide,
@@ -428,9 +429,9 @@ with pieces similarly scaling */
   margin-top: calc(var(--cw) * 5);
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72);
+  color: #9fca35;
   display: flex;
-  display: none;
+  display: block;
 }
 
 #workshop-info {
@@ -523,10 +524,17 @@ with pieces similarly scaling */
 .space {
   margin-top: calc(var(--cw) * 4.2);
 }
+.text-border {
+  border: solid #9fca35;
+  padding: calc(var(--cw) * 1.2);
+  width: 87%;
+  margin: auto;
+}
 #char-breakdown {
   color: rgb(234, 197, 72);
 }
-#workshop-signup {
+#workshop-signup,
+#audition-signup {
   color: #9fca35;
 }
 
