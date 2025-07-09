@@ -441,7 +441,7 @@ with pieces similarly scaling */
   margin: auto;
   margin-top: calc(var(--cw) * 5);
   /* display: flex; */
-  display: block;
+  display: none;
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
