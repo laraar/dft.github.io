@@ -538,7 +538,8 @@ with pieces similarly scaling */
   color: #9fca35;
 }
 
-#workshop-signup-coming {
+#workshop-signup-coming,
+#audition-signup-coming {
   display: none;
 }
 
