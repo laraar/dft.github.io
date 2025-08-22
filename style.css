@@ -439,8 +439,7 @@ with pieces similarly scaling */
   width: 95%;
   padding-top: calc(var(--cw) * 2);
   margin: auto;
-  margin-top: calc(var(--cw) * 5);
-  /* display: flex; */
+  margin-top: calc(var(--cw) * 5); 
   display: none;
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
@@ -454,7 +453,7 @@ with pieces similarly scaling */
   margin: auto;
   margin-top: calc(var(--cw) * 5);
   /* display: flex; */
-  display: none;
+  display: block;
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
@@ -544,12 +543,13 @@ with pieces similarly scaling */
 }
 
 #cast-list {
-  font: 550 calc(var(--cw) * 3.5) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72);
+  font: 550 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
+  color: rgb(234, 197, 72); 
+  width: 75%; 
   /* display: flex; */
-  display: none;
-  flex-direction: column;
-  /* margin: auto; */
+  display: block;
+  flex-direction: column;  
+  margin: auto;
 }
 .cast-item {
   display: flex;
@@ -566,6 +566,18 @@ with pieces similarly scaling */
 .actor-name {
   text-align: left;
   flex: 0.9;
+}
+
+.new-cast-item {
+  margin-top: calc(var(--cw) * 3);
+  margin-bottom: calc(var(--cw) * 2.3);
+}
+.new-character {
+  color: #9fca35;
+}
+.new-actor {
+  color: #ecbd4c;
+  font: 550 calc(var(--cw) * 3.7) Arial, Helvetica, sans-serif;
 }
 #unformatted-cast {
   font: 550 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
@@ -817,7 +829,7 @@ with pieces similarly scaling */
 
 #ADA-title {
   font: 600 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
-  color: #3d0565;
+  color: #3d0565;url(script.js)
   vertical-align: top;
   margin: 0;
   padding-top: calc(var(--cw) * 8);
