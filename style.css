@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Shrek";
-  src: url("fonts/Shrek.woff2") format("woff2"), url("fonts/Shrek.woff") format("woff"),
-    url("fonts/Shrek.ttf") format("truetype");
+  src: url("/fonts/Shrek.woff2") format("woff2"), url("/fonts/Shrek.woff") format("woff"),
+    url("/fonts/Shrek.ttf") format("truetype");
 }
 
 /* The env(safe-area-insert) item makes it so the notch 
