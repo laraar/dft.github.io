@@ -1,5 +1,10 @@
 /** @format */
 
+@font-face {
+  font-family: "Shrek";
+  src: url("fonts/Shrek.ttf") format("truetype");
+}
+
 /* The env(safe-area-insert) item makes it so the notch 
 in iPhone or the like will not pose a problem */
 html {
@@ -239,11 +244,14 @@ with pieces similarly scaling */
   color: #421669;
   vertical-align: top;
   margin: 0;
-  margin-bottom: calc(var(--cw) * 2.2);
+  margin-bottom: calc(var(--cw) * 1);
+}
+#announcing-show {
+  display: none;
 }
 #ticket-sales-header {
   height: calc(var(--cw) * 8);
-  display: none;
+  display: block;
   /* display: flex; */
   flex-direction: row;
 }
@@ -251,6 +259,7 @@ with pieces similarly scaling */
   flex: 20;
   height: calc(var(--cw) * 8);
   margin-right: calc(var(--cw) * 2);
+  display: none;
 }
 #tickets-text {
   display: flex;
@@ -334,7 +343,7 @@ with pieces similarly scaling */
   width: 100%;
   font: 600 calc(var(--cw) * 5) Arial, Helvetica, sans-serif;
   color: #9fca35;
-  display: block;
+  display: none;
   padding-top: 2vw;
   margin-top: calc(var(--cw) * 2);
 }
@@ -398,11 +407,11 @@ with pieces similarly scaling */
 
 #performance-info {
   width: 95%;
-  padding-top: calc(var(--cw) * 2);
+  /* padding-top: calc(var(--cw) * 2); */
   margin: auto;
-  margin-top: calc(var(--cw) * 3);
+  /* margin-top: calc(var(--cw) * 3); */
   /* display: flex; */
-  display: none;
+  display: block;
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
@@ -414,11 +423,11 @@ with pieces similarly scaling */
 .performance-text {
   font: 500 calc(var(--cw) * 3.5) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
-  margin-bottom: calc(var(--cw) * 3);
-}
-
-.smaller-text {
-  font: 500 calc(var(--cw) * 2) Arial, Helvetica, sans-serif;
+  width: 100%;
+  font: 400 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
+  color: #9fca35;
+  display: block;
+  padding-top: 2vw;
 }
 
 #audition-info {
@@ -439,7 +448,7 @@ with pieces similarly scaling */
   width: 95%;
   padding-top: calc(var(--cw) * 2);
   margin: auto;
-  margin-top: calc(var(--cw) * 5); 
+  margin-top: calc(var(--cw) * 5);
   display: none;
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
@@ -513,13 +522,78 @@ with pieces similarly scaling */
   margin-top: calc(var(--cw) * 4);
 }
 .put-border {
-  border: solid white;
+  border: solid #ecbd4c;
   width: 70%;
-  margin: auto;
-  padding-top: calc(var(--cw) * 2);
-  padding-bottom: calc(var(--cw) * 2);
-  margin-top: calc(var(--cw) * 5);
 }
+
+.ticket-text {
+  width: 100%;
+  font: 550 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+  color: #323e15;
+  display: block;
+}
+.shrek {
+  font: 550 calc(var(--cw) * 6) Shrek, Helvetica, sans-serif;
+  margin-bottom: calc(var(--cw) * 2);
+  margin-top: calc(var(--cw) * 0.5);
+  line-height: 1;
+}
+.smaller-text {
+  font: 500 calc(var(--cw) * 2.4) Arial, Helvetica, sans-serif;
+  margin-top: calc(var(--cw) * 1);
+}
+
+.ticket-wrapper {
+  width: 75%;
+  margin-top: 4vw;
+  /* Use vw for padding to control border thickness */
+  padding: max(8px, 1vw);
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  box-sizing: border-box;
+
+  /* Use repeating-linear-gradient for striped border */
+  background-image: repeating-linear-gradient(
+    45deg,
+    #759427,
+    #759427 0.5vw,
+    /* Use vw for stripe width */ #53691c 0.5vw,
+    #53691c 1vw
+  );
+  /* Use vw for background-size to scale stripes */
+  background-size: 1vw 1vw;
+
+  /* Use vw for the mask's circular inset radius */
+  mask-image: radial-gradient(circle at 0 0, transparent 2vw, black 2.1vw),
+    radial-gradient(circle at 100% 0, transparent 2vw, black 2.1vw),
+    radial-gradient(circle at 0 100%, transparent 2vw, black 2.1vw),
+    radial-gradient(circle at 100% 100%, transparent 2vw, black 2.1vw);
+  mask-size: 51% 51%;
+  mask-position: 0 0, 100% 0, 0 100%, 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.ticket-content {
+  background-color: #9fca35;
+  padding: calc(var(--cw) * 2.2);
+  box-sizing: border-box;
+  text-align: center;
+  color: #333;
+  font-family: Arial, sans-serif;
+
+  /* Use vw for the mask's circular inset radius to match wrapper */
+  mask-image: radial-gradient(circle at 0 0, transparent 2vw, black 2.1vw),
+    radial-gradient(circle at 100% 0, transparent 2vw, black 2.1vw),
+    radial-gradient(circle at 0 100%, transparent 2vw, black 2.1vw),
+    radial-gradient(circle at 100% 100%, transparent 2vw, black 2.1vw);
+  mask-size: 51% 51%;
+  mask-position: 0 0, 100% 0, 0 100%, 100% 100%;
+  mask-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .space {
   margin-top: calc(var(--cw) * 4.2);
 }
@@ -544,11 +618,11 @@ with pieces similarly scaling */
 
 #cast-list {
   font: 550 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72); 
-  width: 75%; 
+  color: rgb(234, 197, 72);
+  width: 75%;
   /* display: flex; */
   display: block;
-  flex-direction: column;  
+  flex-direction: column;
   margin: auto;
 }
 .cast-item {
@@ -829,7 +903,7 @@ with pieces similarly scaling */
 
 #ADA-title {
   font: 600 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
-  color: #3d0565;url(script.js)
+  color: #3d0565;
   vertical-align: top;
   margin: 0;
   padding-top: calc(var(--cw) * 8);
