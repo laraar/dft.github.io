@@ -1013,6 +1013,33 @@ to avoid the need for small fractions.*/
   box-shadow: 0 0 calc(var(--cw) * 0.37) calc(var(--cw) * 0.08) #888;
 }
 
+.sponsor-items {
+  height: calc(var(--cw) * 16);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: calc(var(--cw) * 2);
+  margin-top: calc(var(--cw) * -1.5);
+}
+
+.sponsor-text {
+  grid-column: 1 / span 2;
+  text-align: center;
+  color: rgb(236, 208, 255);
+  font: 900 calc(var(--cw) * 1.8) Arial, Helvetica, sans-serif;
+  margin-left: calc(var(--cw) * 6);
+  margin-right: calc(var(--cw) * 6);
+  margin-bottom: calc(var(--cw) * 0.2);
+}
+
+/* Here's the settings for the icons in the icon-bar, defining height and hover color */
+.sponsor-item {
+  height: auto;
+  object-fit: contain;
+  max-height: 100%;
+  margin-top: calc(var(--cw) * -1);
+}
+
 /* Next is the photo box, which also scales with the page width, 
 using the variable cw (content width), to avoid the need for small fractions. */
 #photo-box {
