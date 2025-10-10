@@ -5,6 +5,16 @@
   src: url("/fonts/Shrek.woff2") format("woff2"), url("/fonts/Shrek.woff") format("woff"),
     url("/fonts/Shrek.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Fino";
+  src: url("/fonts/FinoSans.otf") format("opentype");
+}
+
+:root {
+  /* Set this value equal to or slightly greater than the height of your fixed header.
+     If your header is 80px tall, use 80px or 90px. This is for anchor links.*/
+  scroll-padding-top: 40px;
+}
 
 /* The env(safe-area-insert) item makes it so the notch 
 in iPhone or the like will not pose a problem */
@@ -166,7 +176,8 @@ to avoid the need for small fractions.*/
 #banner-container {
   width: 100%;
   position: relative;
-  display: none;
+  margin-bottom: calc(var(--cw) * 1.7);
+  display: block;
 }
 #wide-banner-ad {
   margin: auto;
@@ -469,8 +480,9 @@ with pieces similarly scaling */
   color: rgb(234, 197, 72);
 }
 
-#event-info {
-  display: none;
+#event-info,
+#later-show-info {
+  display: block;
   border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
   width: 95%;
   padding-top: calc(var(--cw) * 2);
@@ -480,10 +492,31 @@ with pieces similarly scaling */
   color: rgb(234, 197, 72);
 }
 
+#event-info {
+  display: none;
+}
+
+.video-container {
+  /* This sets the container's width to 70% of its parent element's width */
+  width: 80%;
+  /* Center the container on the page (optional) */
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  /* Set iframe to fill the container width */
+  width: 100%;
+  /* This maintains the 16:9 ratio, adjusting height automatically */
+  aspect-ratio: 16 / 9;
+  /* Ensure no border is displayed */
+  border: solid #dfbdb2;
+}
+
 #audition-title,
 #workshop-title,
-#event-title,
-#cast-title {
+.event-title,
+#cast-title,
+.later-show-announce-title {
   font: 700 calc(var(--cw) * 5) Arial, Helvetica, sans-serif;
   color: #ecbd4c;
   text-decoration: underline;
@@ -496,6 +529,48 @@ with pieces similarly scaling */
   text-decoration: none;
   font-style: italic;
 }
+.later-show-announce-title {
+  font-style: italic;
+  margin-bottom: calc(var(--cw) * 4);
+  color: #dfbdb2;
+}
+.later-show-subtitle {
+  font: 600 calc(var(--cw) * 4.5) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  margin: 0;
+  margin-bottom: calc(var(--cw) * 1.9);
+  padding-top: calc(var(--cw) * 1);
+  display: block;
+}
+.later-show-subtitle2 {
+  font: 600 calc(var(--cw) * 5.5) Fino, Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  margin: 0;
+  padding-top: calc(var(--cw) * 1);
+  margin-top: calc(var(--cw) * 2.5);
+  display: block;
+}
+.show-description {
+  width: 75%;
+  margin: auto;
+}
+.show-description p {
+  font: 400 calc(var(--cw) * 2.8) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+}
+
+.show-description-info {
+  width: 75%;
+  font: 400 calc(var(--cw) * 3.5) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+}
+.show-description2 {
+  font: 500 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  margin: 0;
+  display: block;
+}
+
 #event-image {
   margin: auto;
   vertical-align: top;
