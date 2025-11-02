@@ -16,6 +16,11 @@
   scroll-padding-top: 40px;
 }
 
+.outlined-text {
+  text-shadow: -1px -1px 0 #8d71ab, /* Top-left offset */ 1px -1px 0 #8d71ab,
+    /* Top-right offset */ -1px 1px 0 #8d71ab, /* Bottom-left offset */ 1px 1px 0 #8d71ab; /* Bottom-right offset */
+}
+
 /* The env(safe-area-insert) item makes it so the notch 
 in iPhone or the like will not pose a problem */
 html {
@@ -362,6 +367,10 @@ with pieces similarly scaling */
 #auditions-announce {
   font: 600 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
   display: none;
+}
+#auditions-link {
+  color: inherit;
+  font: 700 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
 }
 /* @media screen and (max-width: 1317px) {
   #show-info-wide,
