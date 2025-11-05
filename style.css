@@ -538,6 +538,16 @@ with pieces similarly scaling */
   text-decoration: none;
   font-style: italic;
 }
+
+.cast-subtitle {
+  font: 700 calc(var(--cw) * 3.8) Arial, Helvetica, sans-serif;
+  color: #ecbd4c;
+  text-decoration: underline;
+  margin: 0;
+  margin-bottom: calc(var(--cw) * 1.9);
+  padding-top: calc(var(--cw) * 2.2);
+  display: block;
+}
 .later-show-announce-title {
   font-style: italic;
   margin-bottom: calc(var(--cw) * 4);
@@ -702,7 +712,7 @@ with pieces similarly scaling */
 }
 
 #cast-list {
-  font: 550 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
+  font: 550 calc(var(--cw) * 2.5) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
   width: 75%;
   /* display: flex; */
@@ -720,11 +730,12 @@ with pieces similarly scaling */
   font-style: italic;
   text-align: right;
   margin-right: calc(var(--cw) * 4);
-  flex: 1.1;
+  flex: 1;
+  color: #9fca35;
 }
 .actor-name {
   text-align: left;
-  flex: 0.9;
+  flex: 1;
 }
 
 .new-cast-item {
@@ -733,10 +744,11 @@ with pieces similarly scaling */
 }
 .new-character {
   color: #9fca35;
+  font-style: italic;
 }
 .new-actor {
   color: #ecbd4c;
-  font: 550 calc(var(--cw) * 3.7) Arial, Helvetica, sans-serif;
+  font: 550 calc(var(--cw) * 2.5) Arial, Helvetica, sans-serif;
 }
 #unformatted-cast {
   font: 550 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
