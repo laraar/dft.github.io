@@ -182,7 +182,7 @@ to avoid the need for small fractions.*/
   width: 100%;
   position: relative;
   margin-bottom: calc(var(--cw) * 1.7);
-  display: block;
+  display: none;
 }
 #wide-banner-ad {
   margin: auto;
@@ -244,6 +244,31 @@ to avoid the need for small fractions.*/
 }
 /* Here's the stuff for the main page content (e.g., DFT show announcement), 
 with pieces similarly scaling */
+
+.hero-banner {
+  width: 100%;
+  /* Ensures the banner has a strong presence */
+  min-height: 500px;
+  aspect-ratio: 16 / 9;
+
+  /* Image configuration */
+  background-image: url("images/MOE_landscape_web.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* This handles the 'cropping' automatically as you resize */
+  background-size: cover;
+}
+
+/* Mobile Tweak: Keeps the train and text prominent on phones */
+@media (max-width: 768px) {
+  .hero-banner {
+    /* Changes the shape to be taller on mobile */
+    aspect-ratio: 4 / 5;
+    min-height: 600px;
+  }
+}
+
 #show-announcement {
   width: 100%;
   height: auto;
@@ -268,7 +293,7 @@ with pieces similarly scaling */
 }
 #ticket-sales-header {
   height: calc(var(--cw) * 8);
-  display: block;
+  display: none;
   /* display: flex; */
   flex-direction: row;
 }
@@ -326,7 +351,7 @@ with pieces similarly scaling */
   aspect-ratio: 13.889 / 12;
   position: relative;
   /* display: inline-block; */
-  display: block;
+  display: none;
   overflow: hidden;
   border-radius: calc(var(--cw) * 2.5);
 }
@@ -432,7 +457,7 @@ with pieces similarly scaling */
   margin: auto;
   /* margin-top: calc(var(--cw) * 3); */
   /* display: flex; */
-  display: block;
+  display: none;
   flex-direction: column;
   font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
   color: rgb(234, 197, 72);
@@ -477,11 +502,11 @@ with pieces similarly scaling */
 }
 
 #cast-info {
-  border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
+  /* border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72); */
   width: 95%;
-  padding-top: calc(var(--cw) * 2);
+  /* padding-top: calc(var(--cw) * 2); */
   margin: auto;
-  margin-top: calc(var(--cw) * 5);
+  /* margin-top: calc(var(--cw) * 5); */
   /* display: flex; */
   display: block;
   flex-direction: column;
@@ -491,7 +516,7 @@ with pieces similarly scaling */
 
 #event-info,
 #later-show-info {
-  display: block;
+  display: none;
   border-top: calc(var(--cw) * 0.25) solid rgb(234, 197, 72);
   width: 95%;
   padding-top: calc(var(--cw) * 2);
@@ -502,7 +527,7 @@ with pieces similarly scaling */
 }
 
 #event-info {
-  display: block;
+  display: none;
 }
 
 .video-container {
@@ -566,12 +591,13 @@ with pieces similarly scaling */
   padding-top: calc(var(--cw) * 1);
   display: block;
 }
-.later-show-subtitle2 {
-  font: 600 calc(var(--cw) * 5.5) Fino, Arial, Helvetica, sans-serif;
+.later-show-subtitle2,
+.moe {
+  font: 600 calc(var(--cw) * 6) Fino, Arial, Helvetica, sans-serif;
   color: #dfbdb2;
   margin: 0;
-  padding-top: calc(var(--cw) * 1);
-  margin-top: calc(var(--cw) * 2.5);
+  padding-bottom: calc(var(--cw) * 1);
+  /* margin-top: calc(var(--cw) * 2.5); */
   display: block;
 }
 .show-description {
@@ -717,9 +743,9 @@ with pieces similarly scaling */
 }
 
 #cast-list {
-  font: 550 calc(var(--cw) * 2.5) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72);
-  width: 75%;
+  font: 550 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  width: 100%;
   /* display: flex; */
   display: block;
   flex-direction: column;
@@ -736,7 +762,7 @@ with pieces similarly scaling */
   text-align: right;
   margin-right: calc(var(--cw) * 4);
   flex: 1;
-  color: #9fca35;
+  color: #dfbdb2;
 }
 .actor-name {
   text-align: left;
