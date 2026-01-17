@@ -87,6 +87,7 @@ theaterdBtn.addEventListener("click", function () {
   // Go to DFT page
   // window.location.href = "https://www.theaterd.com";
   window.location.href = "https://www.theaterd.com";
+  window.location.href = "https://www.deerfieldtheater.com";
 });
 
 // Add a click event listener to the clickable object
@@ -94,6 +95,7 @@ deerfieldtyaBtn.addEventListener("click", function () {
   // Go to DTYA page
   // window.location.href = "https://www.deerfieldfamilytheater.com/DTYA-index.html";
   window.location.href = "https://www.deerfieldfamilytheater.com/DTYA/index.html";
+  window.location.href = "https://www.deerfieldtheater.com";
 });
 
 document.addEventListener("DOMContentLoaded", function () {
