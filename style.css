@@ -260,6 +260,7 @@ to avoid the need for small fractions.*/
 with pieces similarly scaling */
 
 .hero-banner {
+  display: none;
   width: 100%;
   /* Ensures the banner has a strong presence */
   min-height: 500px;
@@ -281,6 +282,17 @@ with pieces similarly scaling */
     aspect-ratio: 4 / 5;
     min-height: 300px;
   }
+}
+
+#tickets {
+  width: 100%;
+  margin: auto;
+  border: yellow;
+}
+#tickets-image {
+  width: 100%;
+  height: auto;
+  opacity: 1;
 }
 
 #show-announcement {
@@ -507,13 +519,14 @@ with pieces similarly scaling */
   margin: auto;
   /* margin-top: calc(var(--cw) * 3); */
   /* display: flex; */
-  display: none;
+  display: block;
   flex-direction: column;
   font:
     300 calc(var(--cw) * 3) Arial,
     Helvetica,
     sans-serif;
-  color: rgb(234, 197, 72);
+  color: #dfbdb2;
+  margin-bottom: 5vw;
 }
 #performance-text-items {
   width: 95%;
@@ -530,9 +543,9 @@ with pieces similarly scaling */
     400 calc(var(--cw) * 4) Arial,
     Helvetica,
     sans-serif;
-  color: #9fca35;
+
+  color: #dfbdb2;
   display: block;
-  padding-top: 2vw;
 }
 
 #audition-info {
@@ -785,6 +798,7 @@ with pieces similarly scaling */
   position: relative;
   background-color: #fff;
   display: inline-block;
+  display: none;
   box-sizing: border-box;
 
   /* Use repeating-linear-gradient for striped border */
