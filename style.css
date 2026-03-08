@@ -1451,6 +1451,24 @@ using the variable cw (content width), to avoid the need for small fractions. */
   height: calc(var(--cw) * 7);
 }
 
+#board-access {
+  position: absolute;
+  bottom: 12px;
+  right: 30px;
+  font:
+    500 calc(var(--cw) * 1.6) Arial,
+    Helvetica,
+    sans-serif;
+  color: #503b79;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+#board-access:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 /* Other media queries */
 @media screen and (max-width: 1317px) {
   #program-header {
